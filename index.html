@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanti ko Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
   <header>
-    <h1>Hello, I'm <span id="name">Shanti Tamang</span></h1>
-    <p>Welcome to my portfolio website!</p>
-  </header>
+    <nav>
+      <div class="left">Shanti's portfolio</div>
+  <div class="right">
+    <ul>
+     <li><a href="/">Home</a></li>
+     <li><a href="/">About Me</a></li>
+     <li><a href="/">Skills</a></li>
+     <li><a href="/">Projects</a></li>
+     <li><a href="/">Certifications</a></li>
+     <li><a href="/">Contact Me</a></li>
+    </ul>
 
+  </div>
+
+    </nav>
+    
+
+  </header>
   <main>
+<<<<<<< HEAD
     <section id="projects">
       <h2>Projects</h2>
       <div class="project-card">
@@ -23,15 +43,74 @@
       <div class="project-card">
         <h3>Project Two</h3>
         <p></p>
+=======
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi! My name is <span class="purple">Shanti</span>
+        <div>and I am an</div>
+      
+        <span id="element"></span>
+  
+>>>>>>> bacb5a7 (added skills)
       </div>
+      <div class="rightSection"><img src="pg.png" alt="" height="300" width="300"></div>
     </section>
+    <hr>
+    <h2 class="Skills-title">Skills</h25>
+    <section class="Skills">
+      
+       <div class="Skills-out">
+         <div class="Skills-in">
+          
+          
+            <p>Programming Languages</p>
+                 <ul>
+                     <li>Python</li>
+                     <li>JS</li>
+                </ul>
+
+          
+
+         </div>
+       </div>
+        <div class="Skills-out">
+         <div class="Skills-in">
+          <p>Libraries</p>
+                 <ul>
+                     <li>Pandas</li>
+                     <li>NumPy</li>
+                      <li>Matplotlib</li>
+                       <li>Seaborn</li>
+                        <li>Scikit-learn</li>
+                </ul>
+
+         </div>
+       </div>
+        <div class="Skills-out">
+         <div class="Skills-in">
+          <ul>
+            <p>Miscellaneous</p>
+                     
+                     <li>GitHub</li>
+                      <li>Streamlit</li>
+                       <!-- <li>Seaborn</li>
+                        <li>Scikit-learn</li> -->
+                </ul>
+
+         </div>
+       </div>
+       
+  </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-    <button onclick="changeName()">Click Me!</button>
-  </footer>
-
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'AI Engineer'],
+      typeSpeed: 50,
+    });
+ </script>
+  
+  
 </body>
 </html>
