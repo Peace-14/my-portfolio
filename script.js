@@ -6,3 +6,14 @@ function changeName() {
     nameElement.innerText = "Your Name";
   }
 }
+
+
+
+
+  function toggleDescription(header) {
+    const desc = header.nextElementSibling;
+    const arrow = header.querySelector(".arrow");
+    desc.style.display = desc.style.display === "block" ? "none" : "block";
+    arrow.textContent = arrow.textContent === "▼" ? "▲" : "▼";
+  }
+

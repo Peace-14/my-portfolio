@@ -10,33 +10,33 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
+<script src="script.js"></script>
+
 
 
 <body>
   <header>
     <nav>
-      <div class="left">Shanti's portfolio</div>
+  <div class="left">Shanti's portfolio</div>
   <div class="right">
     <ul>
-     <li><a href="/">Home</a></li>
-     <li><a href="/">About Me</a></li>
-     <li><a href="/">Skills</a></li>
-     <li><a href="/">Projects</a></li>
-     <li><a href="/">Certifications</a></li>
-     <li><a href="/">Contact Me</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact Me</a></li>
     </ul>
-
   </div>
+</nav>
 
-    </nav>
     
 
   </header>
   <main>
-    <section class="firstSection">
+    <section id="home" class="firstSection">
       <div class="leftSection">
         Hi! My name is <span class="purple">Shanti</span>
-        <div>and I am an</div>
+        <div>I aspire to be an</div>
       
         <span id="element"></span>
 
@@ -44,7 +44,7 @@
       <div class="rightSection"><img src="pg.png" alt="" height="300" width="300"></div>
     </section>
     <hr>
-    <h2 class="Skills-title">Skills</h2>
+    <h2 id="skills" class="Skills-title">Skills</h2>
     <section class="Skills">
       
        <div class="Skills-out">
@@ -54,7 +54,9 @@
             <p>Programming Languages</p>
                  <ul>
                      <li>Python</li>
-                     <li>JS</li>
+                     <li>JavaScript</li>
+                     <li>HTML</li>
+                     <li>CSS</li>
                 </ul>
 
           
@@ -81,20 +83,155 @@
                      
                      <li>GitHub</li>
                       <li>Streamlit</li>
-                       <!-- <li>Seaborn</li>
-                        <li>Scikit-learn</li> -->
+                    
                 </ul>
 
          </div>
        </div>
        
   </section>
+  <hr>
+ <div class="projects-section">
+  <h2 id="projects" class="Skills-title">Projects</h2>
+
+  <!-- Projects -->
+   <div class="project">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span>Simple Sentiment analyzer</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="project-description">
+      <p>Shows how positive or negative the given sentence is.</p>
+      <a href="https://peace-14-sentiment-analyzer-app-z73xwq.streamlit.app/" target="_blank">
+        🔗 View on Streamlit
+      </a>
+    </div>
+  </div>
+
+
+   <div class="project">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span>Machine Learning Model to measure concrete strength</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="project-description">
+      <p>Measures the concrete strength based on the different combination of the concrete ingredients.</p>
+      <a href="https://ml-app-app-66movvu6feccmrfmmxlvg4.streamlit.app/" target="_blank">
+        🔗 View on Streamlit
+      </a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span>EDA: Concrete Strength</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="project-description">
+      <p>Analysed concrete strength data using Python and its libraries(Pandas, Seaborn, Matplotlib)</p>
+      <a href="https://github.com/Peace-14/eda_concrete_strength/blob/master/concrete1.ipynb" target="_blank">
+        🔗 View on GitHub
+      </a>
+    </div>
+  </div>
+
+
+  <div class="project">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span>EDA: Body Fat Analysis</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="project-description">
+      <p>Analyzed body fat percentage using Python data analysis tools (Pandas, Seaborn, Matplotlib)</p>
+      <a href="https://github.com/peace-14/bodyfat_with_logistic" target="_blank">
+        🔗 View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span>Grade Converter</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="project-description">
+      <p>A simple web-based app that lets users input marks and receive calculated grades using custom logic in JavaScript and HTML.</p>
+      <a href="https://gradechecker-brjzavmfft6cabjjpq832g.streamlit.app/" target="_blank">
+        🔗 View on GitHub
+      </a>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<div class="projects-section">
+  <h2 id="certifications" class="Skills-title">Certifications</h2>
+
+  
+   <!-- Certificate 1 -->
+  <div class="project">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span>100-Hour Training in AI & Its Applications (KTM Metropolitan City)</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="project-description">
+      <p>Hands-on training program covering practical AI applications like machine learning, computer vision, natural language processing, and AI ethics.</p>
+      <a href="https://api.seepmela.com/uploads/certificates/certificate-KMC-SEEP-AI-5106.pdf" target="_blank">🔗 View Certificate</a>
+    </div>
+  </div>
+
+  <!-- Certificate 2 -->
+  <div class="project">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span>Google AI Essentials (Coursera)</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="project-description">
+      <p>Learned foundational AI concepts, responsible AI practices, and how AI is applied in real-world business and technology solutions.</p>
+      <a href="https://coursera.org/share/d42c41492b53ffa36c51e6a38f9bc3d4" target="_blank">🔗 View Certificate</a>
+    </div>
+  </div>
+  <!-- Certificate 3 -->
+  <div class="project">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span>Getting Started with Python (Coursera)</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="project-description">
+      <p>Completed a beginner-level course on Python programming, covering basic syntax, variables, loops, and logic structures.</p>
+      <a href="https://coursera.org/share/f3093d9e88b31c685587cf751137a0bd" target="_blank">🔗 View Certificate</a>
+    </div>
+  </div>
+
+ 
+</div>
+<hr>
+
+
+<div class="contact-outer">
+  <div class="contact-inner">
+    <h2 id="contact" class="title">Contact Me</h2>
+    <div class="contact-content">
+      <p> <strong>Phone:</strong> 9763686967</p>
+      <p> <strong>Email:</strong> <a href="mailto:shanti691027@gmail.com">shanti691027@gmail.com</a></p>
+      <p> <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/shanti-tamang14" target="_blank">linkedin.com/in/shanti-tamang14</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
   </main>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <!-- Setup and start animation! -->
   <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'AI Engineer'],
+      strings: ['AI Engineer'],
       typeSpeed: 50,
     });
  </script>
